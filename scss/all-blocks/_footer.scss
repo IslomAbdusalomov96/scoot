@@ -1,0 +1,212 @@
+@mixin footerStyle ($foot-color, $foot-font-size, $foot-line-height, $foot-letter-spacing) {
+    color: $foot-color;
+    font-size: $foot-font-size;
+    line-height: $foot-line-height;
+    letter-spacing: $foot-letter-spacing;
+}
+// DESKTOP
+.footer {
+    // FOOTER-TOP
+    &__top {
+        padding: 102px 0;
+        background-image: url("../images/scoot-footer-top-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__top-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__top-title {
+        width: 100%;
+        max-width: 415px;
+        @include footerStyle($white-color, 48px, 48px, -2.143px)
+    }
+    &__top-app {
+        display: flex;
+        align-items: center;
+    }
+    &__top-app-link {
+        display: flex;
+        align-items: center;
+        padding: 8px 15px 9px 16px;
+        border-radius: 4px;
+        background-color: $menu-link-color;
+        color: $title-color;
+        .fa-brands {
+            margin-right: 12px;
+            font-size: 30px;
+        }
+        .fa-google-play {
+            font-size: 24px;
+        }
+    }
+    &__top-app-link:not(:last-child) {
+        margin-right: 18px;
+    }
+    &__top-app-subtitle {
+        @include footerStyle($title-color, 10px, normal, -0.446px)
+    }
+    &__top-app-title {
+        @include footerStyle($title-color, 20px, 24px, -0.893px)
+    }
+    // FOOTER-BOTTOM
+    &__bottom {
+        padding: 35px 0 32px;
+        background-color: $menu-footer-color;
+    }
+    &__bottom-container {
+        display: flex;
+        align-items: center;
+    }
+    &__bottom-logo {
+        flex-shrink: 0;
+    }
+    &__bottom-logo-img {
+        width: 108px;
+        height: 29px;
+    }
+    &__bottom-list {
+        margin-left: 59px;
+        display: flex;
+        align-items: center;
+    }
+    &__bottom-item:not(:last-child) {
+        margin-right: 32px;
+    }
+    &__bottom-link {
+        transition: 0.3s;
+        @include footerStyle($text-color, 15px, 25px, 0)
+    }
+    &__bottom-link:hover {
+        color: $btn-icon-hover-color;
+    }
+    &__bottom-social {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    &__bottom-social-item:not(:last-child) {
+        margin-right: 20px;
+    }
+    &__bottom-social-icon {
+        color: $btn-icon-hover-color;
+        font-size: 24px;
+        transition: 0.3s;
+    }
+    &__bottom-social-icon:hover {
+        color: $menu-link-color;
+    }
+}
+// TABLET
+@media only screen and (max-width: 810px) {
+    .footer {
+        &__top {
+            padding: 62px 0;
+            background-image: url("../images/scoot-footer-top-img-tablet.jpg");
+            background-size: cover;
+        }
+        &__top-container {
+            flex-direction: column;
+        }
+        &__top-title {
+            margin-bottom: 40px;
+            max-width: 457px;
+            text-align: center;
+        }
+        &__top-app-link {
+            padding: 5px 10px;
+            .fa-brands {
+                margin-right: 10px;
+                font-size: 24px;
+            }
+            .fa-google-play {
+                font-size: 20px;
+            }
+        }
+        &__top-app-link:not(:last-child) {
+            margin-right: 13px;
+        }
+        &__top-app-subtitle {
+            font-size: 8px;
+            letter-spacing: -0.5px;
+        }
+        &__top-app-title {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer__bottom-container {
+        padding: 0 40px 0 39px;
+    }
+}
+// MOBILE
+@media only screen and (max-width: 610px) {
+    .footer {
+        &__bottom {
+            padding: 64px 0 88px;
+        }
+        &__bottom-container {
+            flex-direction: column;
+            padding: 0 32px;
+        }
+        &__bottom-logo {
+            margin-bottom: 41px;
+        }
+        &__bottom-list {
+            margin-left: 0;
+            margin-bottom: 85px;
+            flex-direction: column;
+        }
+        &__bottom-item:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        &__bottom-social {
+            margin-left: 0;
+        }
+    }
+}
+@media only screen and (max-width: 460px) {
+    .footer {
+        &__top {
+            padding: 88px 0;
+            background-image: url("../images/scoot-footer-top-img-mobile.jpg");
+        }
+        &__top-container {
+            padding: 0 32px;
+        }
+        &__top-title {
+            max-width: 311px;
+            @include footerStyle($white-color, 32px, 32px, -1.429px)
+        }
+    }
+}
+// RETINA IMAGE
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    /* Load high-resolution image */
+    .footer__top {
+        background-image: url("../images/scoot-footer-top-img@2x.jpg");
+    }
+    @media only screen and (max-width: 810px) {
+        .footer__top {
+            background-image: url("../images/scoot-footer-top-img-tablet@2x.jpg");
+        }
+    }
+    @media only screen and (max-width: 460px) {
+        .footer-top {
+            background-image: url("../images/scoot-footer-top-img-mobile@2x.jpg");
+        }
+    }
+}

@@ -1,0 +1,140 @@
+// DESKTOP
+.hero {
+    padding: 153px 0 152px;
+    background-image: url("../images/scoot-hero-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+        max-width: 1150px;
+        color: $white-color;
+    }
+    &__title {
+        margin-bottom: 40px;
+        width: 100%;
+        max-width: 500px;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+    }
+    &__left-main {
+        position: relative;
+        margin-bottom: 40px;
+        margin-left: 38px;
+    }
+    &__line {
+        position: absolute;
+        top: 48px;
+        right: 100%;
+    }
+    &__right-sign {
+        flex-shrink: 0;
+        position: absolute;
+        top: 48px;
+        right: 124px;
+    }
+    &__desc {
+        margin-right: 40px;
+        margin-left: 57px;
+        width: 100%;
+        max-width: 405px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    &__button {
+        margin-left: 95px;
+        padding: 14px 39px;
+    }
+}
+// TABLET
+@media only screen and (max-width: 1100px) {
+    .hero {
+        padding: 137px 0 217px;
+        background-image: url("../images/scoot-hero-img-tablet.jpg");
+        &__container {
+            text-align: center;
+        }
+        &__title {
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+        &__left-main {
+            margin-bottom: 32px;
+            margin-left: 0;
+        }
+        &__line {
+            display: none;
+        }
+        &__desc {
+            margin: 0 auto;
+            max-width: 573px;
+        }
+        &__right-sign {
+            top: 200px;
+            right: 0;
+            left: -20%;
+        }
+        &__button {
+            margin-left: 0;
+        }
+    }
+}
+// MOBILE
+@media only screen and (max-width: 680px) {
+    .hero {
+        padding: 115px 0 179px;
+        background-image: url("../images/scoot-hero-img-mobile.jpg");
+        &__container {
+            padding: 0 32px;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -1.786px;
+        }
+        &__left-main {
+            margin-bottom: 34px;
+        }
+        &__right-sign {
+            top: 170px;
+            left: -30%;
+        }
+    }
+}
+
+@media only screen and (max-width: 528px) {
+    .hero__right-sign {
+        top: 195px;
+        left: -50%;
+    }
+}
+
+@media only screen and (max-width: 418px) {
+    .hero__right-sign {
+        top: 250px;
+        left: -72%;
+    }
+}
+// RETINA IMAGE
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    /* Load high-resolution image */
+    .hero {
+        background-image: url("../images/scoot-hero-img@2x.jpg");
+    }
+    @media only screen and (max-width: 1100px) {
+        .hero {
+            background-image: url("../images/scoot-hero-img-tablet@2x.jpg");
+        }
+    }
+    @media only screen and (max-width: 680) {
+        .hero {
+            background-image: url("../images/scoot-hero-img-mobile@2x.jpg");
+        }
+    }
+}

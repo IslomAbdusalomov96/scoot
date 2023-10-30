@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../fons/LexendDeca-Regular.woff2') format('woff2'),
+        url('../fons/LexendDeca-Regular.woff') format('woff'),
+        url('../fons/LexendDeca-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fons/SpaceMono-Bold.woff2') format('woff2'),
+        url('../fons/SpaceMono-Bold.woff') format('woff'),
+        url('../fons/SpaceMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

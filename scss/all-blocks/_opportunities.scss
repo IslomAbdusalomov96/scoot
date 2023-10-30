@@ -1,0 +1,170 @@
+@mixin opportunityStyle ($opportunity-color, $opportunity-font-size, $opportunity-line-height) {
+    color: $opportunity-color;
+    font-size: $opportunity-font-size;
+    line-height: $opportunity-line-height;
+}
+//DESKTOP
+.opportunities {
+    padding: 168px 0 200px;
+    &__container {
+        position: relative;
+    }
+    &__line {
+        margin: 0;
+        position: absolute;
+        top: 40px;
+        left: -145px;
+        width: 100%;
+        max-width: 925px;
+        height: 15px;
+        background-color: $menu-link-color;
+        border: none;
+        z-index: -1;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        width: 100%;
+        max-width: 350px;
+    }
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__item::before {
+        display: block;
+        margin-bottom: 40px;
+        content: '';
+        width: 96px;
+        height: 96px;
+        background-image: url("../images/scoot-opportunities-app.png");
+        background-repeat: no-repeat;
+        background-size: 96px 96px;
+    }
+    &__item:nth-child(2)::before {
+        background-image: url("../images/scoot-opportunities-scooter.png");
+    }
+    &__item:nth-child(3)::before {
+        background-image: url("../images/scoot-opportunities-ride.png");
+    }
+    &__title {
+        margin-bottom: 27px;
+        letter-spacing: -1.071px;
+        @include opportunityStyle($title-color, 24px, 28px)
+    }
+    &__desc {
+        font-family: 'Lexend Deca', sans-serif;
+        @include opportunityStyle($text-color, 15px, 25px)
+    }
+}
+// TABLET
+@media only screen and (max-width: 1022px) {
+    .opportunities {
+        padding: 122px 0 145px;
+        &__container {
+            padding: 0 98px 0 97px;
+        }
+        &__line {
+            top: -122px;
+            left: 134px;
+            max-width: 15px;
+            height: 512px;
+        }
+        &__list {
+            flex-direction: column;
+        }
+        &__item {
+            position: relative;
+            max-width: 100%;
+        }
+        &__item:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+        &__item::before {
+            margin-bottom: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &__title, &__desc {
+            width: 100%;
+            max-width: 398px;
+            margin-left: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .opportunities {
+        &__container {
+            padding: 0 40px;
+        }
+        &__line {
+            left: 80px;
+        }
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .opportunities {
+        &__container {
+            padding: 0 32px;
+        }
+        &__line {
+            left: 70px;
+        }
+    }
+}
+// MOBILE
+@media only screen and (max-width: 560px) {
+    .opportunities {
+        padding: 120px 0;
+        &__container {
+            padding: 0 32px;
+        }
+        &__line {
+            display: none;
+        }
+        &__item {
+            padding-top: 120px;
+            text-align: center;
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 48px;
+        }
+        &__item::before {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        &__title, &__desc {
+            margin: 0 auto;
+        }
+        &__title {
+            margin-bottom: 24px;
+            font-size: 20px;
+            letter-spacing: -0.893px;
+        }
+    }
+}
+// RETINA IMAGE
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    /* Load high-resolution image */
+    .opportunities__item::before {
+        background-image: url("../images/scoot-opportunities-app@2x.png");
+    }
+    .opportunities__item:nth-child(2):before {
+        background-image: url("../images/scoot-opportunities-scooter@2x.png");
+    }
+    .opportunities__item:nth-child(3):before {
+        background-image: url("../images/scoot-opportunities-ride@2x.png");
+    }
+}

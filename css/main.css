@@ -1,0 +1,1169 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("../fons/LexendDeca-Regular.woff2") format("woff2"), url("../fons/LexendDeca-Regular.woff") format("woff"), url("../fons/LexendDeca-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fons/SpaceMono-Bold.woff2") format("woff2"), url("../fons/SpaceMono-Bold.woff") format("woff"), url("../fons/SpaceMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 102px;
+  padding: 0;
+  height: 100%;
+  font-family: "Space Mono", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 680px) {
+  body {
+    margin-top: 68px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  border: 3px solid transparent;
+  background-color: #FCB72B;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  border-color: #FCB72B;
+  background-color: transparent;
+  color: #FCB72B;
+}
+
+.header {
+  position: fixed;
+  padding: 22px 0 21px;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #FFF;
+  z-index: 10;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  max-width: 1146px;
+}
+.header__hamburger {
+  display: none;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.header__logo {
+  flex-shrink: 0;
+  margin-right: 58px;
+}
+.header__logo-img {
+  width: 108px;
+  height: 29px;
+}
+.header__nav {
+  display: flex;
+  width: 100%;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+}
+.header__item:not(:last-child) {
+  margin-right: 32px;
+}
+.header__link {
+  transition: 0.3s;
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px;
+}
+.header__link:hover {
+  color: #FCB72B;
+}
+.header__button {
+  margin-left: auto;
+  padding: 14px 39px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__container {
+    padding: 0 40px 0 39px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .header {
+    padding: 22px 0;
+  }
+  .header__container {
+    padding: 0 32px;
+    position: relative;
+  }
+  .header__hamburger {
+    display: block;
+  }
+  .header__hamburger .fa-sharp {
+    color: #FCB72B;
+    font-size: 20px;
+  }
+  .header__hamburger .fa-xmark {
+    display: none;
+  }
+  .header__logo {
+    margin: 0 auto;
+  }
+  .header__logo-img {
+    width: 76px;
+    height: 20px;
+  }
+  .header__nav, .header__button {
+    display: none;
+  }
+  .header__list {
+    flex-direction: column;
+    padding-bottom: 339px;
+  }
+  .header__item {
+    margin-right: auto;
+  }
+  .header__item:not(:last-child) {
+    margin-right: auto;
+    margin-bottom: 24px;
+  }
+  .header__link {
+    color: #E5ECF4;
+    font-size: 18px;
+  }
+  .header--open .fa-xmark {
+    display: block;
+  }
+  .header--open .fa-bars {
+    display: none;
+  }
+  .header--open .header__nav {
+    display: block;
+    padding: 64px 0 24px 32px;
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 70%;
+    background-color: #333A44;
+    z-index: 2;
+  }
+  .header--open .header__button {
+    display: block;
+    margin-left: 0;
+  }
+}
+.main {
+  flex-grow: 1;
+}
+
+.hero {
+  padding: 153px 0 152px;
+  background-image: url("../images/scoot-hero-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__container {
+  max-width: 1150px;
+  color: #FFF;
+}
+.hero__title {
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 500px;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+}
+.hero__left-main {
+  position: relative;
+  margin-bottom: 40px;
+  margin-left: 38px;
+}
+.hero__line {
+  position: absolute;
+  top: 48px;
+  right: 100%;
+}
+.hero__right-sign {
+  flex-shrink: 0;
+  position: absolute;
+  top: 48px;
+  right: 124px;
+}
+.hero__desc {
+  margin-right: 40px;
+  margin-left: 57px;
+  width: 100%;
+  max-width: 405px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+.hero__button {
+  margin-left: 95px;
+  padding: 14px 39px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero {
+    padding: 137px 0 217px;
+    background-image: url("../images/scoot-hero-img-tablet.jpg");
+  }
+  .hero__container {
+    text-align: center;
+  }
+  .hero__title {
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .hero__left-main {
+    margin-bottom: 32px;
+    margin-left: 0;
+  }
+  .hero__line {
+    display: none;
+  }
+  .hero__desc {
+    margin: 0 auto;
+    max-width: 573px;
+  }
+  .hero__right-sign {
+    top: 200px;
+    right: 0;
+    left: -20%;
+  }
+  .hero__button {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .hero {
+    padding: 115px 0 179px;
+    background-image: url("../images/scoot-hero-img-mobile.jpg");
+  }
+  .hero__container {
+    padding: 0 32px;
+  }
+  .hero__title {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.786px;
+  }
+  .hero__left-main {
+    margin-bottom: 34px;
+  }
+  .hero__right-sign {
+    top: 170px;
+    left: -30%;
+  }
+}
+@media only screen and (max-width: 528px) {
+  .hero__right-sign {
+    top: 195px;
+    left: -50%;
+  }
+}
+@media only screen and (max-width: 418px) {
+  .hero__right-sign {
+    top: 250px;
+    left: -72%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* Load high-resolution image */
+  .hero {
+    background-image: url("../images/scoot-hero-img@2x.jpg");
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1100px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1100px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1100px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1100px), only screen and (min-resolution: 192dpi) and (max-width: 1100px), only screen and (min-resolution: 2dppx) and (max-width: 1100px) {
+  .hero {
+    background-image: url("../images/scoot-hero-img-tablet@2x.jpg");
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 680), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 680), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 680), only screen and (min-device-pixel-ratio: 2) and (max-width: 680), only screen and (min-resolution: 192dpi) and (max-width: 680), only screen and (min-resolution: 2dppx) and (max-width: 680) {
+  .hero {
+    background-image: url("../images/scoot-hero-img-mobile@2x.jpg");
+  }
+}
+.opportunities {
+  padding: 168px 0 200px;
+}
+.opportunities__container {
+  position: relative;
+}
+.opportunities__line {
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: -145px;
+  width: 100%;
+  max-width: 925px;
+  height: 15px;
+  background-color: #E5ECF4;
+  border: none;
+  z-index: -1;
+}
+.opportunities__list {
+  display: flex;
+  align-items: center;
+}
+.opportunities__item {
+  width: 100%;
+  max-width: 350px;
+}
+.opportunities__item:not(:last-child) {
+  margin-right: 30px;
+}
+.opportunities__item::before {
+  display: block;
+  margin-bottom: 40px;
+  content: "";
+  width: 96px;
+  height: 96px;
+  background-image: url("../images/scoot-opportunities-app.png");
+  background-repeat: no-repeat;
+  background-size: 96px 96px;
+}
+.opportunities__item:nth-child(2)::before {
+  background-image: url("../images/scoot-opportunities-scooter.png");
+}
+.opportunities__item:nth-child(3)::before {
+  background-image: url("../images/scoot-opportunities-ride.png");
+}
+.opportunities__title {
+  margin-bottom: 27px;
+  letter-spacing: -1.071px;
+  color: #495567;
+  font-size: 24px;
+  line-height: 28px;
+}
+.opportunities__desc {
+  font-family: "Lexend Deca", sans-serif;
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 1022px) {
+  .opportunities {
+    padding: 122px 0 145px;
+  }
+  .opportunities__container {
+    padding: 0 98px 0 97px;
+  }
+  .opportunities__line {
+    top: -122px;
+    left: 134px;
+    max-width: 15px;
+    height: 512px;
+  }
+  .opportunities__list {
+    flex-direction: column;
+  }
+  .opportunities__item {
+    position: relative;
+    max-width: 100%;
+  }
+  .opportunities__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .opportunities__item::before {
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .opportunities__title, .opportunities__desc {
+    width: 100%;
+    max-width: 398px;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .opportunities__container {
+    padding: 0 40px;
+  }
+  .opportunities__line {
+    left: 80px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .opportunities__container {
+    padding: 0 32px;
+  }
+  .opportunities__line {
+    left: 70px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .opportunities {
+    padding: 120px 0;
+  }
+  .opportunities__container {
+    padding: 0 32px;
+  }
+  .opportunities__line {
+    display: none;
+  }
+  .opportunities__item {
+    padding-top: 120px;
+    text-align: center;
+  }
+  .opportunities__item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  .opportunities__item::before {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .opportunities__title, .opportunities__desc {
+    margin: 0 auto;
+  }
+  .opportunities__title {
+    margin-bottom: 24px;
+    font-size: 20px;
+    letter-spacing: -0.893px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* Load high-resolution image */
+  .opportunities__item::before {
+    background-image: url("../images/scoot-opportunities-app@2x.png");
+  }
+  .opportunities__item:nth-child(2):before {
+    background-image: url("../images/scoot-opportunities-scooter@2x.png");
+  }
+  .opportunities__item:nth-child(3):before {
+    background-image: url("../images/scoot-opportunities-ride@2x.png");
+  }
+}
+.round {
+  padding-bottom: 329px;
+  overflow: hidden;
+}
+.round__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.round__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.round__item:not(:last-child) {
+  margin-bottom: 160px;
+}
+.round__content {
+  width: 100%;
+  max-width: 445px;
+}
+.round__title {
+  margin-bottom: 24px;
+  letter-spacing: -2.143px;
+  color: #495567;
+  font-size: 48px;
+  line-height: 48px;
+}
+.round__desc {
+  margin-bottom: 40px;
+  font-family: "Lexend Deca", sans-serif;
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px;
+}
+.round__button {
+  padding: 14px 44px;
+}
+.round__images {
+  position: relative;
+}
+.round__right-left-sign {
+  position: absolute;
+}
+.round__quarter-circle {
+  position: absolute;
+  right: -165px;
+  width: 101px;
+  height: 445px;
+  z-index: -1;
+}
+.round__sing--top {
+  bottom: 0;
+  left: -130px;
+  width: 740px;
+  height: 150px;
+}
+.round__quarter-circle--center {
+  left: -165px;
+}
+.round__sign--center {
+  top: 0;
+  left: -165px;
+  width: 450px;
+  height: 138px;
+}
+.round__sign--bottom {
+  top: 85px;
+  right: -165px;
+  width: 355px;
+  height: 138px;
+}
+.round__picture-mobile {
+  display: none;
+  width: 311px;
+  height: 311px;
+}
+
+@media only screen and (max-width: 928px) {
+  .round {
+    padding-bottom: 104px;
+  }
+  .round__item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .round__item:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  .round__item:first-child {
+    margin-bottom: 128px;
+  }
+  .round__item:nth-child(2) {
+    margin-bottom: 120px;
+  }
+  .round__content {
+    text-align: center;
+  }
+  .round__title {
+    margin-bottom: 40px;
+  }
+  .round__images {
+    margin-bottom: 64px;
+  }
+  .round__item:first-child .round__images {
+    margin-bottom: 56px;
+  }
+}
+@media only screen and (max-width: 705px) {
+  .round__container {
+    padding: 0 32px;
+  }
+  .round__sing--top {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .round {
+    padding-bottom: 120px;
+  }
+  .round__item:not(:last-child) {
+    margin-bottom: 120px;
+  }
+  .round__title {
+    margin-bottom: 32px;
+    letter-spacing: -1.429px;
+    color: #495567;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .round__desc {
+    margin-bottom: 32px;
+  }
+  .round__images {
+    margin-bottom: 56px;
+  }
+  .round__picture {
+    display: none;
+  }
+  .round__picture-mobile {
+    display: block;
+    width: 311px;
+    height: 311px;
+  }
+  .round__sign--center {
+    left: -215px;
+  }
+  .round__sign--bottom {
+    top: 0;
+  }
+  .round__quarter-circle {
+    display: none;
+  }
+}
+.footer__top {
+  padding: 102px 0;
+  background-image: url("../images/scoot-footer-top-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer__top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__top-title {
+  width: 100%;
+  max-width: 415px;
+  color: #FFF;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+}
+.footer__top-app {
+  display: flex;
+  align-items: center;
+}
+.footer__top-app-link {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px 9px 16px;
+  border-radius: 4px;
+  background-color: #E5ECF4;
+  color: #495567;
+}
+.footer__top-app-link .fa-brands {
+  margin-right: 12px;
+  font-size: 30px;
+}
+.footer__top-app-link .fa-google-play {
+  font-size: 24px;
+}
+.footer__top-app-link:not(:last-child) {
+  margin-right: 18px;
+}
+.footer__top-app-subtitle {
+  color: #495567;
+  font-size: 10px;
+  line-height: normal;
+  letter-spacing: -0.446px;
+}
+.footer__top-app-title {
+  color: #495567;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.893px;
+}
+.footer__bottom {
+  padding: 35px 0 32px;
+  background-color: #333A44;
+}
+.footer__bottom-container {
+  display: flex;
+  align-items: center;
+}
+.footer__bottom-logo {
+  flex-shrink: 0;
+}
+.footer__bottom-logo-img {
+  width: 108px;
+  height: 29px;
+}
+.footer__bottom-list {
+  margin-left: 59px;
+  display: flex;
+  align-items: center;
+}
+.footer__bottom-item:not(:last-child) {
+  margin-right: 32px;
+}
+.footer__bottom-link {
+  transition: 0.3s;
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+.footer__bottom-link:hover {
+  color: #FCB72B;
+}
+.footer__bottom-social {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.footer__bottom-social-item:not(:last-child) {
+  margin-right: 20px;
+}
+.footer__bottom-social-icon {
+  color: #FCB72B;
+  font-size: 24px;
+  transition: 0.3s;
+}
+.footer__bottom-social-icon:hover {
+  color: #E5ECF4;
+}
+
+@media only screen and (max-width: 810px) {
+  .footer__top {
+    padding: 62px 0;
+    background-image: url("../images/scoot-footer-top-img-tablet.jpg");
+    background-size: cover;
+  }
+  .footer__top-container {
+    flex-direction: column;
+  }
+  .footer__top-title {
+    margin-bottom: 40px;
+    max-width: 457px;
+    text-align: center;
+  }
+  .footer__top-app-link {
+    padding: 5px 10px;
+  }
+  .footer__top-app-link .fa-brands {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  .footer__top-app-link .fa-google-play {
+    font-size: 20px;
+  }
+  .footer__top-app-link:not(:last-child) {
+    margin-right: 13px;
+  }
+  .footer__top-app-subtitle {
+    font-size: 8px;
+    letter-spacing: -0.5px;
+  }
+  .footer__top-app-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer__bottom-container {
+    padding: 0 40px 0 39px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .footer__bottom {
+    padding: 64px 0 88px;
+  }
+  .footer__bottom-container {
+    flex-direction: column;
+    padding: 0 32px;
+  }
+  .footer__bottom-logo {
+    margin-bottom: 41px;
+  }
+  .footer__bottom-list {
+    margin-left: 0;
+    margin-bottom: 85px;
+    flex-direction: column;
+  }
+  .footer__bottom-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .footer__bottom-social {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .footer__top {
+    padding: 88px 0;
+    background-image: url("../images/scoot-footer-top-img-mobile.jpg");
+  }
+  .footer__top-container {
+    padding: 0 32px;
+  }
+  .footer__top-title {
+    max-width: 311px;
+    color: #FFF;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.429px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* Load high-resolution image */
+  .footer__top {
+    background-image: url("../images/scoot-footer-top-img@2x.jpg");
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 810px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 810px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 810px), only screen and (min-device-pixel-ratio: 2) and (max-width: 810px), only screen and (min-resolution: 192dpi) and (max-width: 810px), only screen and (min-resolution: 2dppx) and (max-width: 810px) {
+  .footer__top {
+    background-image: url("../images/scoot-footer-top-img-tablet@2x.jpg");
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 460px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 460px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 460px), only screen and (min-device-pixel-ratio: 2) and (max-width: 460px), only screen and (min-resolution: 192dpi) and (max-width: 460px), only screen and (min-resolution: 2dppx) and (max-width: 460px) {
+  .footer-top {
+    background-image: url("../images/scoot-footer-top-img-mobile@2x.jpg");
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

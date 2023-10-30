@@ -1,0 +1,14 @@
+.button {
+    border: 3px solid transparent;
+    background-color: $btn-icon-hover-color;
+    color: $white-color;
+    font-size: 15px;
+    line-height: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button:hover {
+    border-color: $btn-icon-hover-color;
+    background-color: transparent;
+    color: $btn-icon-hover-color;
+}
