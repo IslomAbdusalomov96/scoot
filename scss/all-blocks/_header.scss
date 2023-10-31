@@ -107,12 +107,6 @@
         }
     }
     // MENU
-    .header--open .fa-xmark {
-        display: block;
-    }
-    .header--open .fa-bars {
-        display: none;
-    }
     .header--open .header__nav {
         display: block;
         padding: 64px 0 24px 32px;
@@ -122,6 +116,12 @@
         width: 70%;
         background-color: $menu-footer-color;
         z-index: 2;
+    }
+    .header--open .fa-bars {
+        display: none;
+    }
+    .header--open .fa-xmark {
+        display: block;
     }
     .header--open .header__button {
         display: block;

@@ -504,12 +504,6 @@ a {
     color: #E5ECF4;
     font-size: 18px;
   }
-  .header--open .fa-xmark {
-    display: block;
-  }
-  .header--open .fa-bars {
-    display: none;
-  }
   .header--open .header__nav {
     display: block;
     padding: 64px 0 24px 32px;
@@ -519,6 +513,12 @@ a {
     width: 70%;
     background-color: #333A44;
     z-index: 2;
+  }
+  .header--open .fa-bars {
+    display: none;
+  }
+  .header--open .fa-xmark {
+    display: block;
   }
   .header--open .header__button {
     display: block;
